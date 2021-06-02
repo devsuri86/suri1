@@ -1,0 +1,17 @@
+docker swarm init --advertise-addr 3.129.60.211 
+
+
+docker swarm join --token SWMTKN-1-4k6u7si0tfff3feseuhxapjc7wtmujty00619gy6koxyb0rv4t-dpxafeuu1xx7ecvmibhwkdctj 3.129.60.211:2377
+
+
+
+
+
+docker swarm join --token SWMTKN-1-4k6u7si0tfff3feseuhxapjc7wtmujty00619gy6koxyb0rv4t-dpxafeuu1xx7ecvmibhwkdctj 3.129.60.211:2377
+         
+
+
+
+docker service create --name <service-name> -p 8080:80 --replicas 3 nginx:latest    [replicas is nothing but creating multiple containers using same image]
+
+docker service create --name sureshservice -p 8080:80 --replicas 3 nginx:latest
